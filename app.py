@@ -3,6 +3,7 @@ import numpy as np
 import tensorflow as tf
 import os
 import google.generativeai as genai
+from dotenv import load_dotenv
 
 
 app = Flask(__name__)
@@ -247,9 +248,9 @@ def predict():
     )
     print("Final Message:", message)  # Debugging log
     return jsonify({'message': message})
-# Configure Gemini API Key
-os.environ['GOOGLE_API_KEY'] = 'YOUR_GOOGLE_GEMINI_API_KEY'
-genai.configure(api_key='AIzaSyB4Lyib3DSSroqRIJqISqLbomzRxZKpIUY')
+# Configure Gemini API Key (read from the .env file, never hard-coded)
+load_dotenv()
+genai.configure(api_key=os.environ.get('GOOGLE_API_KEY'))
 
 # Load the model
 model_ = genai.GenerativeModel('gemini-pro')

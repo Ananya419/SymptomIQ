@@ -126,9 +126,9 @@ SymptomIQ/
 
 ## 📞 Contact
 
-- **Author**: Ananya Shahi
-- **GitHub**: https://github.com/Ananya419
-- **LinkedIn**: [www.linkedin.com/in/ananya-shahi-1a1390305]()
+- **Authors**: Ananya Shahi and Shri Ram Dwivedi
+- **GitHub**: https://github.com/Ananya419 · https://github.com/shri-ram07
+- **LinkedIn**: [linkedin.com/in/ananya-shahi-1a1390305](https://www.linkedin.com/in/ananya-shahi-1a1390305/)
 
 ---
 
